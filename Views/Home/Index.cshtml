@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container w-25 border border-secondary">
+    <form action="Submit" method="post">
+        <div class="input-group mb-3">
+            <label class="form-label" for="name">Your Name: </label>
+            <input class="form-control" type="text" name="name" />
+        </div>
+        <div class="input-group mb-3">
+            <label class="form-label" for="location">Dojo Location: </label>
+            <select class="form-select" name="location" id="location">
+                <option value="Chicago">Chicago</option>
+                <option value="Honolulu">Honolulu</option>
+                <option value="China">China</option>
+                <option value="Austrailia">Austrailia</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label class="form-label" for="language">Favorite Language: </label>
+            <select class="form-select" name="language" id="language">
+                <option value="C#">C#</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Mern">MERN</option>
+                <option value="English">English</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" for="comment">Comments:</span>
+            <textarea class="form-control" name="comment" id="comment" aria-label="With textarea"></textarea>
+        </div>
+        <button class="btn btn-primary">Submit</button>
+    </form>
+</div>
